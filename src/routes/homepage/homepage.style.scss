@@ -1,0 +1,45 @@
+.element-container {
+    padding: 50px 100px;
+
+    .element-info {
+        padding-right: 20px;
+    }
+
+    h2 {
+        font-size: 48px;
+        font-weight: 500;
+    }
+
+    h3 {
+        font-weight: 600;
+        font-size: 22px;
+        margin-top: 10px;
+    }
+
+    .features {
+        width: 50%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feature {
+        justify-content: center;
+
+        display: flex;
+
+        .text {
+            padding: 0 25px;
+        }
+
+        p {
+            width: 100%;
+        }
+    }
+
+    .get-started {
+        padding: 0 30px;
+
+        cursor: default;
+    }
+}
