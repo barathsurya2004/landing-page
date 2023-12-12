@@ -15,7 +15,7 @@ const BottomElement = () => {
                 }}
                 transition={{
                     duration: 1,
-                    ease: 'easeIn'
+                    type: 'spring'
                 }}>
                 <h2>
                     What's different about Manage ?
@@ -35,7 +35,7 @@ const BottomElement = () => {
                 }}
                 transition={{
                     duration: 1,
-                    ease: 'easeIn'
+                    type: 'spring'
                 }}>
                 <div className='feature'>
                     <div className='get-started'>01</div>

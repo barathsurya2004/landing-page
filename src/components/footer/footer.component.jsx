@@ -4,15 +4,26 @@ import instagram from '../../assets/icon-instagram.svg';
 import pinterest from '../../assets/icon-pinterest.svg';
 import twitter from '../../assets/icon-twitter.svg';
 import youtube from '../../assets/icon-youtube.svg';
-import logo1 from '../../assets/logo-dark.svg'
+import logo1 from '../../assets/logo-dark.svg';
+import { motion } from 'framer-motion';
 const Footer = () => {
     return (
         <div className="footer">
             <div className="banner">
                 <h2>Simplify how your team works today.</h2>
-                <div className="get-started">
+                <motion.div className='get-started'
+                    initial={{
+                        scale: 1
+                    }}
+                    whileHover={{
+                        scale: 1.05
+                    }}
+                    whileTap={{
+                        scale: 0.95
+                    }}
+                >
                     Get Started
-                </div>
+                </motion.div>
             </div>
             <div className="footer-links">
                 <div className="icons">
@@ -52,7 +63,19 @@ const Footer = () => {
                 <div className='subscription'>
                     <div className='input-sub'>
                         <input type="email" placeholder='Updates in your inbox' />
-                        <div className='get-started'> Go</div>
+                        <motion.div className='get-started'
+                            initial={{
+                                scale: 1
+                            }}
+                            whileHover={{
+                                scale: 1.05
+                            }}
+                            whileTap={{
+                                scale: 0.95
+                            }}
+                        >
+                            Go
+                        </motion.div>
                     </div>
                     <span>Copyright 2023. All rights reserved</span>
                 </div>

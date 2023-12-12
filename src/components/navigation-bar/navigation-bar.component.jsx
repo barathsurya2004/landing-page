@@ -1,6 +1,7 @@
 import logo from '../../assets/logo.svg'
 import './navigation-bar.style.scss'
 import background from '../../assets/bg-tablet-pattern.svg';
+import { motion } from 'framer-motion';
 export const NavigationBar = () => {
     return (
         <div className='navigation-bar'>
@@ -14,9 +15,19 @@ export const NavigationBar = () => {
                 <span className='link'>Careers</span>
                 <span className='link'>Community</span>
             </div>
-            <div className='get-started'>
+            <motion.div className='get-started'
+                initial={{
+                    scale: 1
+                }}
+                whileHover={{
+                    scale: 1.05
+                }}
+                whileTap={{
+                    scale: 0.95
+                }}
+            >
                 Get Started
-            </div>
+            </motion.div>
             <div className='background-style1'>
                 <img src={background} alt="background" />
             </div>

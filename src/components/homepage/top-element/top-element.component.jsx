@@ -14,17 +14,27 @@ const TopElement = () => {
                     opacity: 1
                 }}
                 transition={{
-                    duration: 1,
-                    ease: 'easeIn'
+                    duration: 0.8,
+                    type: 'spring'
                 }}
             >
                 <h1>Bring Everyone together to build better products</h1>
                 <p>
                     Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view
                 </p>
-                <div className="get-started">
+                <motion.div className='get-started'
+                    initial={{
+                        scale: 1
+                    }}
+                    whileHover={{
+                        scale: 1.05
+                    }}
+                    whileTap={{
+                        scale: 0.95
+                    }}
+                >
                     Get Started
-                </div>
+                </motion.div>
             </motion.div>
             <motion.div className="img-container"
                 initial={{
@@ -36,8 +46,8 @@ const TopElement = () => {
                     opacity: 1
                 }}
                 transition={{
-                    duration: 1,
-                    ease: 'easeIn'
+                    duration: 0.8,
+                    type: 'spring'
                 }}>
                 <img src={illustration} alt='illustration' />
             </motion.div>
