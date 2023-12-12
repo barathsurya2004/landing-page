@@ -1,18 +1,42 @@
 import './bottom-element.style.scss';
-
+import { motion } from 'framer-motion';
 
 const BottomElement = () => {
     return (
         <div className='element-container'>
-            <div className='element-info'>
+            <motion.div className='element-info'
+                initial={{
+                    y: '100px',
+                    opacity: 0
+                }}
+                whileInView={{
+                    y: 0,
+                    opacity: 1
+                }}
+                transition={{
+                    duration: 1,
+                    ease: 'easeIn'
+                }}>
                 <h2>
                     What's different about Manage ?
                 </h2>
                 <p>
                     Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.
                 </p>
-            </div>
-            <div className='features'>
+            </motion.div>
+            <motion.div className='features'
+                initial={{
+                    y: '100px',
+                    opacity: 0
+                }}
+                whileInView={{
+                    y: 0,
+                    opacity: 1
+                }}
+                transition={{
+                    duration: 1,
+                    ease: 'easeIn'
+                }}>
                 <div className='feature'>
                     <div className='get-started'>01</div>
                     <div className='text'>
@@ -34,7 +58,7 @@ const BottomElement = () => {
                         <p>Stop jumping from one service to another to communicate, store files, track tasks and share documents. Magage offers an all-in-one team productivity solution.</p>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }
